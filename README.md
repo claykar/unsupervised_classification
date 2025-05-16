@@ -2,7 +2,7 @@
 
 ## Introduction
 
-For this project I analyzed satellite imagery of Monongalia county. I wanted to try to identify/uncover land cover patterns that weren't represented in previous land cover datasets. By using K-means to segment and group pixels based band values I was able to gain knowledge about possibly discovered new land cover patterns.
+For this project I analyzed satellite imagery of Monongalia County. I wanted to try to identify/uncover land cover patterns that weren't represented in previous land cover datasets. By using K-means to segment and group pixels based band values I was able to gain knowledge about possibly discovered new land cover patterns.
 
 ## Methods
 
@@ -15,7 +15,7 @@ The data I use for this analysis included:
 
 ### Analysis
 
-Multiple clustering analyses were performed. For the K-means, the `k_means()` method part of `library(terra)` was used. For the number of clusters I ran the analysis with 14, 16, 18, and 20 clusters. I chose these cluster numbers because based on the land cover data, there were 16 land cover types present in Monongalia county. Since I wanted to try to find new patterns and features, I decided to analyze cluster counts around or above the number of pre-existing land cover types. After running the clustering to analyze the output I changed the symbology/colors of the output and cross analyzed it with a map of the NLCD land cover data and the original imagery.
+Multiple clustering analyses were performed. For the K-means, the `k_means()` method part of `library(terra)` was used. For the number of clusters I ran the analysis with 14, 16, 18, and 20 clusters. I chose these cluster numbers because based on the land cover data, there were 16 land cover types present in Monongalia County. Since I wanted to try to find new patterns and features, I decided to analyze cluster counts around or above the number of pre-existing land cover types. After running the clustering to analyze the output I changed the symbology/colors of the output and cross analyzed it with a map of the NLCD land cover data and the original imagery.
 
 ## Results
 
@@ -51,11 +51,11 @@ Looking at the image, you can see that there is a greener wall of forest/vegetat
 
 ## Discussion
 
-After looking at the results of the clustering analysis, it can be said that there are more/more specific forest and vegetation types in Monongalia county then represented in the NLCD map. I think this is partly due to the way the NLCD is made. It is a land cover dataset that is meant to represent the entire USA in about 20 land classes as accurately as it can, so using more generic classes is probably better for that job. The results show that the NLCD might under-represent the diversity of the natural land cover types and over-specified the man-made land cover types, when applied to Monongalia county. Even when making fewer clusters then there are NLCD classes present in the county, the analysis shows that multiple clusters are being grouped on areas previously thought to be just one forest/vegetation type. And when adding groups these groups are still well defined. In other words, the NLCD might be under representative of Monongalia county's diversity of forest/vegetation types. I think that if a future study wanted to use land cover data in their analysis, and they wanted the data to be representative of the ecology of the county they might consider creating their own land cover for the county.
+After looking at the results of the clustering analysis, it can be said that there are more/more specific forest and vegetation types in Monongalia County then represented in the NLCD map. I think this is partly due to the way the NLCD is made. It is a land cover dataset that is meant to represent the entire USA in about 20 land classes as accurately as it can, so using more generic classes is probably better for that job. The results show that the NLCD might under-represent the diversity of the natural land cover types and over-specified the man-made land cover types, when applied to Monongalia County. Even when making fewer clusters then there are NLCD classes present in the county, the analysis shows that multiple clusters are being grouped on areas previously thought to be just one forest/vegetation type. And when adding groups these groups are still well defined. In other words, the NLCD might be under representative of Monongalia County's diversity of forest/vegetation types. I think that if a future study wanted to use land cover data in their analysis, and they wanted the data to be representative of the ecology of the county they might consider creating their own land cover for the county.
 
 ## Conclusion
 
-To conclude my analysis, I found that there might be more diverse or specific types of forest, vegetation, and natural land cover types in Monongalia county compared to what is shown in the NLCD. With that being said, given the unsupervised-ness of the clustering method used, K-means, we can't know for sure how the results of the analysis were found, except that if you cross examine the results with the NLCD and original image, the results make sense. In conclusion, I think that given the results, if I was to do an analysis of Monongalia county where I was going to use land cover data, I would use or create a different land cover dataset that was more representative to the features found in the results.
+To conclude my analysis, I found that there might be more diverse or specific types of forest, vegetation, and natural land cover types in Monongalia County compared to what is shown in the NLCD. With that being said, given the unsupervised-ness of the clustering method used, K-means, we can't know for sure how the results of the analysis were found, except that if you cross examine the results with the NLCD and original image, the results make sense. In conclusion, I think that given the results, if I was to do an analysis of Monongalia County where I was going to use land cover data, I would use or create a different land cover dataset that was more representative to the features found in the results.
 
 ## Sources
 
